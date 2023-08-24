@@ -3,7 +3,7 @@ package Recursion;
 public class Main {
     public static void main(String[] args) {
         Main r = new Main();
-        var t = r.fibonacci(30);
+        var t = r.sumOfDigits(31);
         System.out.println(t);
 
     }
@@ -30,5 +30,14 @@ public int fibonacci(int n) {
 
     return fibonacci(n-1) + fibonacci(n-2);
 }
+
+public int sumOfDigits(int n) {
+    if (n == 0 || n<0){
+        return 0;
+    }
+
+    return n%10 + sumOfDigits(n/10);
+}
+
 
 }
