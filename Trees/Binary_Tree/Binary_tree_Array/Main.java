@@ -14,7 +14,7 @@ public class Main {
         bt.insert("N9");
         System.out.println();
 
-        bt.deleteBT();
+        bt.preOrder(1);
     }
 
     

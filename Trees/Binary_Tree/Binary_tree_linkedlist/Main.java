@@ -12,8 +12,7 @@ public class Main {
         binaryTree.insert("N7");
         binaryTree.insert("N8");
         binaryTree.insert("N9");
-        binaryTree.levelOrder();
-        binaryTree.deleteNode("N4");
-        binaryTree.levelOrder();  
+        binaryTree.preOrder(binaryTree.root);
+         
     }   
 }
